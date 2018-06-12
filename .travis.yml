@@ -1,7 +1,7 @@
 language: node_js
 provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  on:
-    branch: gh-pages
+skip-cleanup: true
+github-token: $GITHUB_TOKEN
+keep-history: true
+on:
+   branch: gh-pages
