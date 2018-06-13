@@ -8,7 +8,6 @@
    <meta name="author" content="Kole-Ibrahim AbdulQudus" />
    <title>Ride My Way | SignIn</title>
    <link rel="stylesheet" href="./UI/style.css" />
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +19,6 @@
          <nav>
             <ul>
                <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
                <li class="current"><a href="rides.html">Rides</a></li>
                <li><a href="profile.html">Profile</a></li>
                <li><a href="signin.html">SignIn</a></li>
@@ -29,12 +27,13 @@
       </div>
    </header>
 
-   <section id="newsletter">
+   <section id="search">
       <div class="container">
-         <h1>Subscribe To Our Newsletter</h1>
-         <form>
-            <input type="email" placeholder="Enter Email...">
-            <button type="submit" class="button">Subscribe</button>
+         <h1>Find A Ride</h1>
+         <form method="post" action="">
+            <input type="email" autocomplete="email" placeholder="From" />
+            <input type="email" autocomplete="email" placeholder="To" />
+            <button type="submit" class="button">Search</button>
          </form>
       </div>
    </section>
@@ -43,9 +42,8 @@
       <div class="container">
          <article id="main-col">
             <h1 class="page-title">Rides</h1>
-            <ul id="services">
+            <ul id="rides">
                <li>
-                  <img src=""
                   <h3>Igando to Ikeja</h3>
                   <p>
                      Route : Going through egbeda
@@ -76,10 +74,10 @@
 
          <aside id="sidebar">
             <div class="dark">
-               <h3>Post Ride ?</h3>
+               <h3>Post Ride</h3>
                <p>
                   Would you like to post a ride of your own?
-                  <a href="new_ride.html">Offer a Ride now!</a>
+                  <a class="offerRide" href="new_ride.html">Offer a Ride now!</a>
                </p>
             </div>
          </aside>
