@@ -31,9 +31,10 @@ ul {
    border-radius: 5px;
 }
 
-button:hover{
+.active, button:hover{
    background-color: #5EC6FF;
    cursor: pointer;
+   color: #1A286D;
 }
 
 .dark {
@@ -42,6 +43,15 @@ button:hover{
    color:#ffffff;
    margin-top:10px;
    margin-bottom:10px;
+}
+
+form {
+   font-weight: bold;
+}
+
+form a {
+   text-decoration: underline;
+   color: white;
 }
 
 /* Header **/
@@ -88,7 +98,9 @@ header a:hover{
    color:#5EC6FF;
    /* font-weight:bold; */
 }
+/* Global */
 
+/* figure */
 figcaption {
    text-align: center;
    margin-top: 30px;
@@ -99,6 +111,7 @@ figcaption {
 figure {
    margin: 0;
 }
+/* figure */
 
 /* Showcase */
 #showcase {
@@ -118,6 +131,8 @@ figure {
 #showcase p {
    font-size:20px;
 }
+
+/* showcase */
 
 /* search */
 #search {
@@ -149,6 +164,7 @@ input, #search button{
    padding-left: 6px;
    /* text-align: center; */
 }
+/* search */
 
 /* Boxes */
 #boxes {
@@ -165,6 +181,7 @@ input, #search button{
 #boxes .box img {
    width:90px;
 }
+/* boxes */
 
 /* Sidebar */
 aside#sidebar {
@@ -177,6 +194,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
    width:90%;
    padding:5px;
 }
+/* sidebar */
 
 /* Main-col */
 article#main-col {
@@ -184,11 +202,13 @@ article#main-col {
    width:65%;
 }
 
+/* how it works */
 #how {
    text-align: center;
    background:#3F67CC;
    color: #ffffff;
 }
+/* how it works */
 
 /* rides */
 ul #rides li {
@@ -198,17 +218,24 @@ ul #rides li {
    margin-bottom:5px;
    background-color: #e6e6e6;
 }
+/* rides */
 
+/* footer */
 footer {
    padding:20px;
-   margin-top:20px;
+   margin-top:0;
    color:#ffffff;
    background-color:#3F67CC;
    text-align: center;
-   /* margin-top: 22%; */
+   /* bottom: 0%;
+   position: fixed;
+   width: 100%;
+   margin-top: 22%;
    /* width: 100%; */
 }
+/* footer */
 
+/* signin */
 .signin {
    width: 45%;
    margin: auto;
@@ -224,15 +251,10 @@ footer {
 .signin button {
    margin-top: 9px;
 }
+/* signin */
 
-form {
-   font-weight: bold;
-}
+/* form */
 
-form a {
-   text-decoration: underline;
-   color: white;
-}
 
 .offerRide {
    color: #ffffff;
@@ -245,6 +267,54 @@ form a {
 #logo {
    height: 30px;
 }
+
+/* profile */
+#profile {
+   /* margin: 0; */
+}
+
+#profile img {
+   float: left;
+   margin-right: 80px;
+   margin-top: 30px;
+}
+/* profile  */
+
+/* info */
+#info {
+   margin-top: 0;
+   float: left;
+}
+
+#info p{
+font-size: 18px;
+}
+/* info */
+
+/* signin and signup */
+#signin {
+   /* float: left; */
+   width: 50%;
+}
+
+#button_signin {
+   float: left;
+   width: 50%;
+}
+#button_signup {
+   float: right;
+   width: 50%;
+}
+
+#signup {
+   /* float: right; */
+   width: 50px;
+}
+
+#auth .container {
+   width: 60%;
+}
+/* signin and signup */
 
 /* Media Queries */
 @media(max-width: 768px) {
@@ -284,4 +354,9 @@ form a {
    .signin {
       width: 80%
    }
+
+   #auth .container {
+      width: 80%;
+   }
 }
+/* https://coolors.co/5ec6ff-3f67cc-c1cefe-1a286d-624cab */
