@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# Dev tool files
+.DS_Store
+.vscode
+.nb_project
