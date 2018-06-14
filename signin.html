@@ -70,6 +70,20 @@
                   <input type="tel" placeholder="Phone" required />
                </div>
                <div>
+                  <label for="account">Passenger</label>
+                  <input type="radio" name="account" value="passenger" onchange="checkAccount('passenger')" />
+                  <label>Driver</label>
+                  <input type="radio" name="account" value="driver" onchange="checkAccount('driver')"  />
+               </div>
+               <div id="model" hidden>
+                  <label>Car Model *</label><br />
+                  <input type="text" placeholder="e.g Toyota Corolla 2002" />
+               </div>
+               <div id="plates" hidden>
+                  <label>Car Plate Number *</label>
+                  <input type="text" placeholder="Car Plate Number" />
+               </div>
+               <div>
                   <label>Password *</label><br />
                   <input type="password" placeholder="Password" required />
                </div>
@@ -91,6 +105,8 @@
    let signupTab = document.getElementById('signup');
    let button_signin = document.getElementById('button_signin');
    let button_signup = document.getElementById('button_signup');
+   let plates = document.getElementById('plates');
+   let model = document.getElementById('model');
 
    document.getElementById('button_signin').addEventListener('click', function () {
       signinTab.style.display = "initial";
@@ -105,6 +121,20 @@
       button_signup.setAttribute('class', 'button active');
       button_signin.setAttribute('class', 'button');
    });
+
+   function checkAccount (type) {
+      switch (type) {
+         case 'driver':
+         plates.style.display = 'initial';
+         model.style.display = 'initial';
+         break;
+         case 'passenger':
+         plates.style.display = 'none';
+         model.style.display = 'none';
+         break;
+      }
+
+   }
    </script>
 
 </body>
