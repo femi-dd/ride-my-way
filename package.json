@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers",
   "scripts": {
-    "test": "node test.js"
+    "test": "jshint test.js"
   },
   "author": "Kole-Ibrahim AbdulQudus",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "jshint": "^2.6.0"
   }
 }
