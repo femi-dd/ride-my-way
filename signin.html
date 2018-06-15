@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Ride-my App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers." />
+   <meta name="keywords" content="ride, rides, get rides, get local ride, get fast ride" />
+   <meta name="author" content="Kole-Ibrahim AbdulQudus" />
+   <title>Ride My Way | SignIn</title>
+   <link rel="icon" href="./UI/images/favicon.ico" />
+   <link rel="stylesheet" href="./UI/style.css" />
+</head>
+<body>
+
+   <header>
+      <div class="container">
+         <div id="branding">
+            <h1><img src="./UI/images/logo.png" id="logo" alt="Ride-My-Way_logo"/> <span class="highlight">Ride</span> My Way</h1>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="rides.html">Rides</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li class="current"><a href="signin.html">SignIn / SignUp</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <section id="auth">
+      <div class="container dark">
+         <button id="button_signin" class="button active">Signin</button>
+         <button id="button_signup" class="button">SignUp</button>
+
+         <div id="signin" class="signin box">
+            <h2>SignIn</h2>
+            <p>
+               Sigin to your account to view or offer rides.
+            </p>
+            <form>
+               <div>
+                  <label>Email or Username</label><br />
+                  <input type="text" placeholder="Email or Username" autofocus required/>
+               </div>
+               <div>
+                  <label>Password</label><br />
+                  <input type="password" placeholder="Password" required/>
+               </div>
+               <button class="button" type="submit">SignIn</button>
+            </form>
+         </div>
+
+         <div id="signup" class="signin box" hidden>
+            <h2>SignUp</h2>
+            <p>
+               Create new account. All fields marked * are required.
+            </p>
+            <form>
+               <div>
+                  <label>Name *</label><br />
+                  <input type="text" placeholder="Name" autofocus required />
+               </div>
+               <div>
+                  <label>Email *</label><br />
+                  <input type="text" placeholder="Email or Username" required />
+               </div>
+               <div>
+                  <label>Phone *</label><br />
+                  <input type="tel" placeholder="Phone" required />
+               </div>
+               <div>
+                  <label for="account">Passenger</label>
+                  <input type="radio" name="account" value="passenger" onchange="checkAccount('passenger')" />
+                  <label>Driver</label>
+                  <input type="radio" name="account" value="driver" onchange="checkAccount('driver')"  />
+               </div>
+               <div id="model" hidden>
+                  <label>Car Model *</label><br />
+                  <input type="text" placeholder="e.g Toyota Corolla 2002" />
+               </div>
+               <div id="plates" hidden>
+                  <label>Car Plate Number *</label>
+                  <input type="text" placeholder="Car Plate Number" />
+               </div>
+               <div>
+                  <label>Password *</label><br />
+                  <input type="password" placeholder="Password" required />
+               </div>
+               <button class="button" type="submit">SignUp</button>
+            </form>
+         </div>
+
+      </div>
+   </section>
+
+   <footer>
+      <p>
+         Copyright &copy; <script>document.write(new Date().getFullYear());</script> Ride-My-Way All Rights Reserved.
+      </p>
+   </footer>
+
+   <script type="text/javascript">
+   let signinTab = document.getElementById('signin');
+   let signupTab = document.getElementById('signup');
+   let button_signin = document.getElementById('button_signin');
+   let button_signup = document.getElementById('button_signup');
+   let plates = document.getElementById('plates');
+   let model = document.getElementById('model');
+
+   document.getElementById('button_signin').addEventListener('click', function () {
+      signinTab.style.display = "initial";
+      signupTab.style.display = "none";
+      button_signin.setAttribute('class', 'button active');
+      button_signup.setAttribute('class', 'button');
+   });
+
+   document.getElementById('button_signup').addEventListener('click', function () {
+      signinTab.style.display = "none";
+      signupTab.style.display = "initial";
+      button_signup.setAttribute('class', 'button active');
+      button_signin.setAttribute('class', 'button');
+   });
+
+   function checkAccount (type) {
+      switch (type) {
+         case 'driver':
+         plates.style.display = 'initial';
+         model.style.display = 'initial';
+         break;
+         case 'passenger':
+         plates.style.display = 'none';
+         model.style.display = 'none';
+         break;
+      }
+
+   }
+   </script>
+
+</body>
+</html>

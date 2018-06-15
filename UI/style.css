@@ -1,0 +1,369 @@
+body {
+   font: 15px/1.5 'Trebuchet MS',sans-serif;
+   padding:0;
+   margin:0;
+   background-color:#f4f4f4;
+}
+
+/* Global */
+.container {
+   width:80%;
+   margin:auto;
+   overflow:hidden;
+}
+
+ul {
+   margin:0;
+   padding:0;
+}
+
+.button {
+   height:38px;
+   background:#1A286D;
+   border:0;
+   padding-left: 20px;
+   padding-right:20px;
+   color:#ffffff;
+   width: 27%;
+   font-weight: bold;
+   font-size: 13px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.active, button:hover{
+   background-color: #5EC6FF;
+   cursor: pointer;
+   color: #1A286D;
+}
+
+.dark {
+   padding:15px;
+   background:#3F67CC;
+   color:#ffffff;
+   margin-top:10px;
+   margin-bottom:10px;
+}
+
+form {
+   font-weight: bold;
+}
+
+form a {
+   text-decoration: underline;
+   color: white;
+}
+
+/* Header **/
+header{
+   background:#3F67CC;
+   color:#ffffff;
+   padding-top:20px;
+   min-height:60px;
+   /* border-bottom:#7189FF 3px solid; */
+}
+
+header a {
+   color:#ffffff;
+   text-decoration:none;
+   text-transform: uppercase;
+   font-size:16px;
+}
+
+header li {
+   float:left;
+   display:inline;
+   padding: 0 20px 0 20px;
+}
+
+header #branding {
+   float:left;
+}
+
+header #branding h1 {
+   margin:0;
+}
+
+header nav {
+   float:right;
+   margin-top:10px;
+}
+
+header .highlight, header .current a {
+   color:#5EC6FF;
+   font-weight:bold;
+}
+
+header a:hover{
+   color:#5EC6FF;
+   /* font-weight:bold; */
+}
+/* Global */
+
+/* figure */
+figcaption {
+   text-align: center;
+   margin-top: 30px;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+figure {
+   margin: 0;
+}
+/* figure */
+
+/* Showcase */
+#showcase {
+   min-height:400px;
+   background:url('../UI/images/showcase.jpg') no-repeat 0 -750px;
+   /* background-size: cover; */
+   text-align:center;
+   color:#ffffff;
+}
+
+#showcase h1 {
+   margin-top:100px;
+   font-size:55px;
+   margin-bottom:10px;
+}
+
+#showcase p {
+   font-size:20px;
+}
+
+/* showcase */
+
+/* search */
+#search {
+   padding:15px;
+   color:#ffffff;
+   background:#3F67CC;
+}
+
+#search h1 {
+   float:left;
+}
+
+#search form {
+   float:right;
+   margin-top:15px;
+   width: 70%;
+}
+
+#search input[type="email"]{
+   padding:4px;
+   height:25px;
+   width:250px;
+}
+
+input, #search button{
+   font-size: 15px;
+   border-radius: 5px;
+   border-style: none;
+   padding-left: 6px;
+   /* text-align: center; */
+}
+/* search */
+
+/* Boxes */
+#boxes {
+   margin-top:20px;
+}
+
+#boxes .box {
+   float:left;
+   text-align: center;
+   width:30%;
+   padding:10px;
+}
+
+#boxes .box img {
+   width:90px;
+}
+/* boxes */
+
+/* Sidebar */
+aside#sidebar {
+   float:right;
+   width:30%;
+   margin-top:10px;
+}
+
+aside#sidebar .form input, aside#sidebar .form textarea {
+   width:90%;
+   padding:5px;
+}
+/* sidebar */
+
+/* Main-col */
+article#main-col {
+   float:left;
+   width:65%;
+}
+
+/* how it works */
+#how {
+   text-align: center;
+   background:#3F67CC;
+   color: #ffffff;
+}
+/* how it works */
+
+/* rides */
+#rides li {
+   list-style: none;
+   padding:20px;
+   border: #cccccc solid 8px;
+   margin-bottom:5px;
+   background-color: #C1CEFE;
+   font-size: 17px;
+}
+/* rides */
+
+/* footer */
+footer {
+   padding:20px;
+   margin-top:0;
+   color:#ffffff;
+   background-color:#3F67CC;
+   text-align: center;
+   /* bottom: 0%;
+   position: fixed;
+   width: 100%;
+   margin-top: 22%;
+   /* width: 100%; */
+}
+/* footer */
+
+/* signin */
+.signin {
+   width: 45%;
+   margin: auto;
+   margin-top: 15px;
+}
+
+.signin input {
+   width: 100%;
+   height: 30px;
+   margin-bottom: 10px;
+}
+
+.signin button {
+   margin-top: 9px;
+}
+/* signin */
+
+/* form */
+
+
+.offerRide {
+   color: #ffffff;
+}
+
+.page-title {
+   font-size: 30px;
+}
+
+#logo {
+   height: 30px;
+}
+
+/* profile */
+#profile {
+   padding:20px;
+   margin: 5px 5px 5px 5px;
+   border: #3F67CC solid 8px;
+   margin-bottom:5px;
+   /* background-color: #C1CEFE; */
+   font-size: 17px;
+}
+
+#profile img {
+   float: left;
+   margin-right: 80px;
+   margin-top: 30px;
+   height: 100%;
+}
+/* profile  */
+
+/* info */
+#info {
+   margin-top: 0;
+   float: left;
+}
+
+#info p{
+   font-size: 18px;
+}
+/* info */
+
+/* signin and signup */
+#signin {
+   /* float: left; */
+   width: 50%;
+}
+
+#button_signin {
+   float: left;
+   width: 50%;
+}
+#button_signup {
+   float: right;
+   width: 50%;
+}
+
+#signup {
+   /* float: right; */
+   width: 50px;
+}
+
+#auth .container {
+   width: 60%;
+}
+/* signin and signup */
+
+/* Media Queries */
+@media(max-width: 768px) {
+   header #branding,
+   header nav,
+   header nav li,
+   #search h1,
+   #search form,
+   #boxes .box,
+   article#main-col,
+   /* .signin, */
+   aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+   }
+
+   header {
+      padding-bottom:20px;
+   }
+
+   #showcase h1 {
+      margin-top:40px;
+   }
+
+   #search button, .form button, .button{
+      display:block;
+      width:100%;
+      margin-top: 5px;
+   }
+
+   #search form input[type="email"], input[type="text"] .form input, .form textarea {
+      width:100%;
+      margin-bottom:5px;
+   }
+
+   .signin {
+      width: 80%
+   }
+
+   #auth .container {
+      width: 80%;
+   }
+}
+/* https://coolors.co/5ec6ff-3f67cc-c1cefe-1a286d-624cab */
