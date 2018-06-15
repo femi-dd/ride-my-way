@@ -1,0 +1,13 @@
+{
+  "name": "Ride-My-Way",
+  "version": "1.0.0",
+  "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kole-Ibrahim AbdulQudus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
