@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="Ride-my App is a carpooling application that provides drivers with the ability to create ride offers and passengers to Request to Join available ride offers." />
+   <meta name="keywords" content="ride, rides, get rides, get local ride, get fast ride" />
+   <meta name="author" content="Kole-Ibrahim AbdulQudus" />
+   <title>Ride My Way | Ride Requests</title>
+   <link rel="icon" href="./UI/images/favicon.ico" />
+   <link rel="stylesheet" href="./UI/style.css" />
+</head>
+<body>
+
+   <header>
+      <div class="container">
+         <div id="branding">
+            <h1><img src="./UI/images/logo.png" id="logo" alt="Ride-My-Way_logo"/> <span class="highlight">Ride</span> My Way</h1>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li class="current"><a href="rides.html">Rides</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li><a href="signin.html">SignIn / SignUp</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <section id="search">
+      <div class="container">
+         <h1>Find A Ride</h1>
+         <form method="post" action="">
+            <input type="email" autocomplete="email" placeholder="From" />
+            <input type="email" autocomplete="email" placeholder="To" />
+            <button type="submit" class="button">Search</button>
+         </form>
+      </div>
+   </section>
+
+   <section id="main">
+      <div class="container">
+         <article id="main-col">
+            <h1 class="page-title">Passesnger Requests</h1>
+            <ul id="rides">
+               <li>
+                  <h3>Kole Ibrahim</h3>
+                  <p>
+                     Current Location : Besided Oando, Along BRT BusStop
+                  </p>
+                  <p>
+                     Phone : <a href="tel:+2348189456784">+234 818 9456 784</a>
+                  </p>
+                  <button class="button">Accept</button>
+                  <button class="button">Decline</button>
+               </li>
+               <li>
+                  <h3>Abdul Qudus</h3>
+                  <p>
+                     Current Location : Besided Oando, Along BRT BusStop
+                  </p>
+                  <p>
+                     Phone : <a href="tel:+2348189456784">+234 802 4689 103</a>
+                  </p>
+                  <button class="button">Accept</button>
+                  <button class="button">Decline</button>
+               </li>
+               <li>
+                  <h3>Javascript Ayorinde</h3>
+                  <p>
+                     Current Location : NNPC filling station, Oluwalogbon BusStop
+                  </p>
+                  <p>
+                     Phone : <a href="tel:+2348189456784">+234 802 4689 103</a>
+                  </p>
+                  <button class="button">Accept</button>
+                  <button class="button">Decline</button>
+               </li>
+            </ul>
+         </article>
+
+         <!-- <aside id="sidebar">
+            <div class="dark">
+               <h3>Post Ride</h3>
+               <p>
+                  Would you like to post a ride of your own?
+                  <a class="offerRide" href="new_ride.html">Offer a Ride now!</a>
+               </p>
+            </div>
+         </aside> -->
+
+      </div>
+   </section>
+
+   <footer>
+      <p>
+         Copyright &copy; <script>document.write(new Date().getFullYear());</script> Ride-My-Way All Rights Reserved.
+      </p>
+   </footer>
+
+</body>
+</html>
