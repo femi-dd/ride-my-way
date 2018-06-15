@@ -190,7 +190,7 @@ aside#sidebar {
    margin-top:10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside#sidebar .form input, aside#sidebar .form textarea {
    width:90%;
    padding:5px;
 }
@@ -211,12 +211,13 @@ article#main-col {
 /* how it works */
 
 /* rides */
-ul #rides li {
+#rides li {
    list-style: none;
    padding:20px;
    border: #cccccc solid 8px;
    margin-bottom:5px;
-   background-color: #e6e6e6;
+   background-color: #C1CEFE;
+   font-size: 17px;
 }
 /* rides */
 
@@ -270,13 +271,19 @@ footer {
 
 /* profile */
 #profile {
-   /* margin: 0; */
+   padding:20px;
+   margin: 5px 5px 5px 5px;
+   border: #3F67CC solid 8px;
+   margin-bottom:5px;
+   /* background-color: #C1CEFE; */
+   font-size: 17px;
 }
 
 #profile img {
    float: left;
    margin-right: 80px;
    margin-top: 30px;
+   height: 100%;
 }
 /* profile  */
 
@@ -287,7 +294,7 @@ footer {
 }
 
 #info p{
-font-size: 18px;
+   font-size: 18px;
 }
 /* info */
 
@@ -340,13 +347,13 @@ font-size: 18px;
       margin-top:40px;
    }
 
-   #search button, .quote button, .button{
+   #search button, .form button, .button{
       display:block;
       width:100%;
       margin-top: 5px;
    }
 
-   #search form input[type="email"], .quote input, .quote textarea {
+   #search form input[type="email"], input[type="text"] .form input, .form textarea {
       width:100%;
       margin-bottom:5px;
    }
