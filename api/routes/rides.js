@@ -33,7 +33,7 @@ router.get('/:id', (request, response) => {
 router.post('/', (request, response) => {
   const newRideData = request.body;
 
-  response.status(200).json({
+  response.status(201).json({
     message: 'New ride route',
     data: newRideData,
   });
