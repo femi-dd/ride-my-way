@@ -1,14 +1,31 @@
 {
-  "name": "Ride-My-Way",
+  "name": "ride-my-way-api",
   "version": "1.0.0",
-  "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers",
+  "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers.",
+  "main": "index.js",
   "scripts": {
-    "test": "jshint test.js"
+    "dev": "nodemon server.js",
+    "eslint": "eslint"
   },
+  "keywords": [
+    "api",
+    "ride-my-way"
+  ],
   "author": "Kole-Ibrahim AbdulQudus",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "jshint": "^2.6.0"
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "jasmine": "^3.1.0",
+    "mocha": "^5.2.0"
   }
 }
