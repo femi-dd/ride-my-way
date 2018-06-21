@@ -56,16 +56,13 @@ describe('Checking and Testing all API Endpoints', function () {
       });
   });
 
-  // it('GET /Should return 404 Not Found for invalid URL path', function () {
-  //   return chai.request(app)
-  //     .get('/any-path').
-  //     then(function () {
-  //       throw new Error('Path exists!');
-  //     })
-  //     .catch(function (error) {
-  //       expect(error).to.have.status(404);
-  //     });
-  // });
+  it('GET /Should return 404 Not Found for invalid URL path', function () {
+    return chai.request(app)
+      .get('/anypath')
+      .catch(function (error) {
+        expect(error).to.have.status(404);
+      });
+  });
 
 });
 
