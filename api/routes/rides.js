@@ -22,7 +22,7 @@ router.get('/:id', (request, response) => {
   const rideId = request.params.id;
   response.status(200).json({
     ride_id: rideId,
-    // ride_data: ride[ride_id]
+    ride_data: allRides[rideId],
   });
 });
 

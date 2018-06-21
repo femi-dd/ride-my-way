@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers.",
   "repository": "https://github.com/femi-dd/ride-my-way/tree/api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "eslint": "eslint",
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "keywords": [
     "api",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
