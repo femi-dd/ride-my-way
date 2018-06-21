@@ -2,14 +2,15 @@ const express = require('express');
 
 const router = express.Router();
 
-// const rides = require('../data/data.json');
+const allRides = require('../data/data.json');
+
 /**
  * Request Method    :  GET
  * Endpoint Function :  Fetches all ride offers
 */
 router.get('/', (request, response) => {
   response.status(200).json({
-    // rides: rides,
+    rides: allRides,
   });
 });
 

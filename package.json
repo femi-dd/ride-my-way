@@ -2,16 +2,18 @@
   "name": "ride-my-way-api",
   "version": "1.0.0",
   "description": "Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers.",
+  "repository": "https://github.com/femi-dd/ride-my-way/tree/api",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "test": "mocha"
   },
   "keywords": [
     "api",
     "ride-my-way"
   ],
-  "author": "Kole-Ibrahim AbdulQudus",
+  "author": "Kole-Ibrahim AbdulQudus <femi.highsky@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -20,6 +22,7 @@
     "nodemon": "^1.17.5"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
