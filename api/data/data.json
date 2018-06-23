@@ -1,26 +1,28 @@
 {
-   "1": {
-      "ride_id": "1",
-      "from": "Igando",
-      "to": "Ikeja",
-      "driver": "John Tunde",
-      "driver_id": "1",
-      "car_model": "Toyota Corolla 2015",
-      "car_plate": "AND 247 LA",
-      "route": "Abule egba, iyanaipaja, shomolo",
-      "leaves_at": "2: 35 AM",
-      "passengers": {}
-   },
-   "2": {
-      "ride_id": "2",
-      "from": "Ikeja",
-      "to": "Berger",
-      "driver": "Alexander Cage",
-      "driver_id": "2",
-      "car_model": "Toyota Corolla 2004",
-      "car_plate": "AND E47 LA",
-      "route": "Ikeja guiness, Capitol road",
-      "leaves_at": "3: 00 PM",
-      "passengers": {}
+   "rides": {
+      "1": {
+         "rideID": "1",
+         "from": "Igando",
+         "to": "Ikeja",
+         "driver": "John Tunde",
+         "driverId": "1",
+         "car_model": "Toyota Corolla 2015",
+         "car_plate": "AND 247 LA",
+         "route": "Abule egba, iyanaipaja, shomolo",
+         "leaves_at": "2: 35 AM",
+         "passengers": []
+      },
+      "2": {
+         "rideID": "2",
+         "from": "Ikeja",
+         "to": "Berger",
+         "driver": "Alexander Cage",
+         "driverId": "2",
+         "car_model": "Toyota Corolla 2004",
+         "car_plate": "AND E47 LA",
+         "route": "Ikeja guiness, Capitol road",
+         "leaves_at": "3: 00 PM",
+         "passengers": []
+      }
    }
 }

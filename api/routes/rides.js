@@ -43,11 +43,21 @@ router.post('/', (request, response) => {
  * Request Method    :  POST
  * Endpoint Function :  Allows the user to make a request to join a ride
  */
-router.post('/:ride_id/requests', (request, response) => {
-  const rideId = request.params.ride_id;
-  response.status(200).json({
-    message: 'Make ride request route',
-    id: rideId,
+router.post('/:rideId/requests', (request, response) => {
+  const { rideId } = request.params;
+  const passenger = {
+    passengerName: request.body.name,
+    passengerPhone: request.body.phone,
+    passengerLocation: request.body.location,
+  };
+
+  allRides.rides[rideId].passengers.push({ passenger });
+
+  response.status(201).json({
+    message: `Request to Join ride ${rideId} has been made.`,
+    ride_id: rideId,
+    passengerData: { passenger },
+    l: allRides,
   });
 });
 
