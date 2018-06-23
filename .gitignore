@@ -64,3 +64,5 @@ typings/
 #IDE / Editor files
 .vscode
 .nbproject
+
+package-lock.json
