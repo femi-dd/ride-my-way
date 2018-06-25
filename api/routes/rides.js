@@ -22,7 +22,7 @@ router.get('/:id', (request, response) => {
   const rideId = request.params.id;
   response.status(200).json({
     ride_id: rideId,
-    ride_data: allRides[rideId],
+    ride_data: allRides.rides[rideId],
   });
 });
 
@@ -31,12 +31,28 @@ router.get('/:id', (request, response) => {
  * Endpoint Function :  Enables the driver to create a new ride offer
  */
 router.post('/', (request, response) => {
-  const newRideData = request.body;
+  /* eslint-disable */
+  const {
+    rideId, from, to, driver, driverId, carModel, carPlate, route, leavesAt,
+  } = request.body;
+
+  const newRide = {
+    ride_id: rideId,
+    from: from,
+    to: to,
+    driver: driver,
+    driverId: driverId,
+    carModel: carModel,
+    carPlate: carPlate,
+    route: route,
+    leavesAt: leavesAt,
+  }
 
   response.status(201).json({
     message: 'New ride route',
-    data: newRideData,
+    data: newRide,
   });
+  /* eslint-enable */
 });
 
 /**
@@ -45,20 +61,26 @@ router.post('/', (request, response) => {
  */
 router.post('/:rideId/requests', (request, response) => {
   const { rideId } = request.params;
-  const passenger = {
-    passengerName: request.body.name,
-    passengerPhone: request.body.phone,
-    passengerLocation: request.body.location,
-  };
+  if (request.body === {} || request.body === '') {
+    response.status(200).json({
+      error: 'error',
+    });
+  } else {
+    const passenger = {
+      passengerName: request.body.name,
+      passengerPhone: request.body.phone,
+      passengerLocation: request.body.location,
+    };
 
-  allRides.rides[rideId].passengers.push({ passenger });
+    allRides.rides[rideId].passengers.push({ passenger });
 
-  response.status(201).json({
-    message: `Request to Join ride ${rideId} has been made.`,
-    ride_id: rideId,
-    passengerData: { passenger },
-    l: allRides,
-  });
+    response.status(201).json({
+      message: `Request to Join ride ${rideId} has been made.`,
+      ride_id: rideId,
+      passengerData: { passenger },
+      l: allRides,
+    });
+  }
 });
 
 module.exports = router;
