@@ -61,15 +61,16 @@ router.post('/', (request, response) => {
  */
 router.post('/:rideId/requests', (request, response) => {
   const { rideId } = request.params;
-  if (request.body === {} || request.body === '') {
-    response.status(200).json({
-      error: 'error',
+  const { name, phone, location } = request.body;
+  if (name === undefined || phone === undefined || location === undefined) {
+    response.status(400).json({
+      error: 'Incomplete Data',
     });
   } else {
     const passenger = {
-      passengerName: request.body.name,
-      passengerPhone: request.body.phone,
-      passengerLocation: request.body.location,
+      passengerName: name,
+      passengerPhone: phone,
+      passengerLocation: location,
     };
 
     allRides.rides[rideId].passengers.push({ passenger });

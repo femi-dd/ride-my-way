@@ -60,10 +60,10 @@ describe('Checking and Testing all API Endpoints', () => {
     });
   });
 
-  it('POST / Should return result containing details of ride the user wants to join', () => {
+  it('POST \/ Should return \'incomplete data\' error message', () => {
     return chai.request(app).post('/api/v1/rides/1/requests')
       .then((result) => {
-        expect(result).to.have.status(201);
+        expect(result).to.have.status(400);
         expect(result).to.be.json;
         expect(result.body).to.be.an('object');
       });
