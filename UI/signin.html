@@ -7,15 +7,15 @@
    <meta name="keywords" content="ride, rides, get rides, get local ride, get fast ride" />
    <meta name="author" content="Kole-Ibrahim AbdulQudus" />
    <title>Ride My Way | SignIn</title>
-   <link rel="icon" href="./UI/images/favicon.ico" />
-   <link rel="stylesheet" href="./UI/style.css" />
+   <link rel="icon" href="./images/favicon.ico" />
+   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
    <header>
       <div class="container">
          <div id="branding">
-            <h1><img src="./UI/images/logo.png" id="logo" alt="Ride-My-Way_logo"/> <span class="highlight">Ride</span> My Way</h1>
+            <h1><img src="./images/logo.png" id="logo" alt="Ride-My-Way_logo"/> <span class="highlight">Ride</span> My Way</h1>
          </div>
          <nav>
             <ul>
@@ -100,42 +100,7 @@
       </p>
    </footer>
 
-   <script type="text/javascript">
-   let signinTab = document.getElementById('signin');
-   let signupTab = document.getElementById('signup');
-   let button_signin = document.getElementById('button_signin');
-   let button_signup = document.getElementById('button_signup');
-   let plates = document.getElementById('plates');
-   let model = document.getElementById('model');
-
-   document.getElementById('button_signin').addEventListener('click', function () {
-      signinTab.style.display = "initial";
-      signupTab.style.display = "none";
-      button_signin.setAttribute('class', 'button active');
-      button_signup.setAttribute('class', 'button');
-   });
-
-   document.getElementById('button_signup').addEventListener('click', function () {
-      signinTab.style.display = "none";
-      signupTab.style.display = "initial";
-      button_signup.setAttribute('class', 'button active');
-      button_signin.setAttribute('class', 'button');
-   });
-
-   function checkAccount (type) {
-      switch (type) {
-         case 'driver':
-         plates.style.display = 'initial';
-         model.style.display = 'initial';
-         break;
-         case 'passenger':
-         plates.style.display = 'none';
-         model.style.display = 'none';
-         break;
-      }
-
-   }
-   </script>
+   <script type="text/javascript" src="./js/index.js"></script>
 
 </body>
 </html>

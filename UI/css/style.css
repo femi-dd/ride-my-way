@@ -116,7 +116,7 @@ figure {
 /* Showcase */
 #showcase {
    min-height:400px;
-   background:url('../UI/images/showcase.jpg') no-repeat 0 -750px;
+   background:url('../images/showcase.jpg') no-repeat 0 -750px;
    /* background-size: cover; */
    text-align:center;
    color:#ffffff;
@@ -228,10 +228,11 @@ footer {
    color:#ffffff;
    background-color:#3F67CC;
    text-align: center;
-   /* bottom: 0%;
+   /* bottom: 0%; */
    position: fixed;
+   /* z-index: 1; */
    width: 100%;
-   margin-top: 22%;
+   /* margin-top: 22%; */
    /* width: 100%; */
 }
 /* footer */
